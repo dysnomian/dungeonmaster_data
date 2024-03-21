@@ -1,0 +1,38 @@
+{
+    "pronouns": "they/them",
+    "race": {
+        "name": "Elf",
+        "features": {}
+    },
+    "classes": [
+        {
+            "name": "Wizard",
+            "level": 1,
+            "features": {}
+        }
+    ],
+    "ability_scores": {
+        "strength": 10,
+        "dexterity": 14,
+        "constitution": 12,
+        "intelligence": 18,
+        "wisdom": 13,
+        "charisma": 11
+    },
+    "alignment": "Neutral Good",
+    "age": 100,
+    "leveling": {
+        "system": "Experience",
+        "experience_points": 0
+    },
+    "hit_points": {
+        "current": 10
+    },
+    "proficiencies": {
+        "armor": [],
+        "weapons": [],
+        "tools": [],
+        "skills": [],
+        "languages": []
+    }
+}

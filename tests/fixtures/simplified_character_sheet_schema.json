@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": { "type": "string" },
+      "pronouns": { "type": "string" },
+      "race": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "features": { "type": "object" }
+        },
+        "required": ["name", "features"]
+      },
+      "classes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "level": { "type": "integer", "minimum": 1 },
+            "features": { "type": "object" }
+          },
+          "required": ["name", "level", "features"]
+        }
+      },
+      "ability_scores": {
+        "type": "object",
+        "properties": {
+          "strength": { "type": "integer" },
+          "dexterity": { "type": "integer" },
+          "constitution": { "type": "integer" },
+          "intelligence": { "type": "integer" },
+          "wisdom": { "type": "integer" },
+          "charisma": { "type": "integer" }
+        },
+        "required": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"]
+      },
+      "alignment": { "type": "string" },
+      "age": { "type": "integer", "minimum": 0 },
+      "leveling": {
+        "type": "object",
+        "properties": {
+          "system": { "type": "string" },
+          "experience_points": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["system", "experience_points"]
+      },
+      "hit_points": {
+        "type": "object",
+        "properties": {
+          "current": { "type": "integer", "minimum": 0 },
+          "maximum": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["current", "maximum"]
+      },
+       "proficiencies": {
+        "type": "object",
+        "properties": {
+          "armor": { "type": "array", "items": { "type": "string" } },
+          "weapons": { "type": "array", "items": { "type": "string" } },
+          "tools": { "type": "array", "items": { "type": "string" } },
+          "skills": { "type": "array", "items": { "type": "string" } },
+          "languages": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["armor", "weapons", "tools", "skills", "languages"]
+      }
+    },
+    "required": [
+      "name",
+      "pronouns",
+      "race",
+      "classes",
+      "ability_scores",
+      "alignment",
+      "age",
+      "leveling",
+      "hit_points",
+      "proficiencies"
+    ]
+  }
+  

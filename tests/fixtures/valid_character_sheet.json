@@ -1,0 +1,264 @@
+{
+    "name": "Name",
+    "full_name": "Full Name",
+    "pronouns": "He/him",
+    "race": {
+        "name": "Variant Human",
+        "features": {
+            "languages": [
+                "Common",
+                "Elvish",
+                "Halfling"
+            ],
+        }
+    },
+    "age": 25,
+    "classes": [
+        {
+            "name": "Fighter",
+            "level": 1
+        }
+    ],
+    "alignment": "Neutral Good",
+    "background": { "name": "Soldier" },
+    "faith": "Helm",
+    "level_up_system": "Milestone",
+    "experience_points": null,
+    "hit_points": {
+        "current": 20,
+        "maximum": 20,
+        "temporary": 0
+    },
+    "conditions": [],
+    "appearance": {
+        "eyes": "Brown",
+        "hair": "Brown",
+        "skin": "Brown",
+        "height": "180 cm"
+    },
+    "personality_traits": [
+        "I'm always polite and respectful.",
+        "I'm haunted by memories of war. I can't get the images of violence out of my mind."
+    ],
+    "ideals": [
+        "Greater Good: Our lot is to lay down our lives in defense of others."
+    ],
+    "bonds": [
+        "I'll never forget the crushing defeat my company suffered or the enemies who dealt it."
+    ],
+    "flaws": [
+        "The monstrous enemy we faced in battle still leaves me quivering with fear."
+    ],
+    "ability_scores": {
+        "strength": 16,
+        "dexterity": 12,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 8,
+        "charisma": 13
+    },
+    "proficiencies": {
+        "armor": [
+            {
+                "name": "All armor",
+                "proficient": true,
+                "source": "Fighter"
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Simple weapons",
+                "source": "Fighter"
+            },
+            {
+                "name": "Martial weapons",
+                "source": "Fighter"
+            }
+        ],
+        "languages": [
+            {
+                "name": "Common",
+                "proficient": true,
+                "source": "Default"
+            },
+            {
+                "name": "Elvish",
+                "proficient": true,
+                "source": "Variant Human"
+            },
+            {
+                "name": "Halfling",
+                "proficient": true,
+                "source": "Variant Human"
+            }
+        ],
+        "skills": [
+            {
+                "name": "Athletics",
+                "source": "Fighter"
+            },
+            {
+                "name": "Intimidation",
+                "source": "Soldier"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Herbalism kit",
+                "proficient": true,
+                "source": "Soldier"
+            }
+        ]
+    },
+    "equipment": {
+        "Backpack": {
+            "type": "container",
+            "equipped": true,
+            "weight": 5,
+            "magical": false,
+            "contents": [
+                {
+                    "name": "Bedroll"
+                },
+                {
+                    "name": "Mess kit"
+                },
+                {
+                    "name": "Tinderbox"
+                },
+                {
+                    "name": "Torches",
+                    "qty": 10
+                },
+                {
+                    "name": "Rations (1 day)",
+                    "qty": 10
+                },
+                {
+                    "name": "Waterskin"
+                },
+                {
+                    "name": "Hempen rope",
+                    "length": 50
+                }
+            ]
+        },
+        "Breastplate": {
+            "type": "armor",
+            "equipped": true,
+            "weight": 20,
+            "ac": 14,
+            "properties": "Lightweight and flexible",
+            "description": "This armor is made of interlocking metal plates and is adorned with intricate designs that seem to shift and change in the light."
+        },
+        "Longsword": {
+            "name": "Longsword",
+            "type": "Martial weapon",
+            "description": "A versatile weapon with a long blade and a hilt suitable for two-handed or one-handed use.",
+            "damage": [
+                {
+                    "dice_string": "1d8",
+                    "damage_type": "Slashing",
+                    "modifier": "Strength"
+                }
+            ],
+            "reach": 5,
+            "weight": 3,
+            "properties": [
+                "Versatile (1d10)"
+            ],
+            "equipped": true,
+            "slot": "one hand"
+        },
+        "Light Crossbow": {
+            "name": "Light Crossbow",
+            "type": "Crossbow",
+            "description": "A light crossbow made of polished wood and steel.",
+            "damage": [
+                {
+                    "dice_string": "1d8",
+                    "modifier": "Proficiency bonus",
+                    "damage_type": "Piercing"
+                }
+            ],
+            "weight": 5,
+            "range": {
+                "normal": 80,
+                "maximum": 320
+            },
+            "properties": [
+                "Loading",
+                "Two-Handed"
+            ],
+            "ammunition": {
+                "type": "Bolts"
+            },
+            "equipped": true,
+            "slot": "two hands"
+        },
+        "Crossbow Bolt Case": {
+            "type": "container",
+            "equipped": true,
+            "weight": 1,
+            "magical": false,
+            "capacity": "20 bolts",
+            "contents": [
+                {
+                    "name": "Crossbow bolts",
+                    "qty": 20
+                }
+            ]
+        },
+        "Traveler's clothes": {
+            "type": "clothing",
+            "equipped": true,
+            "weight": 4,
+            "description": "A set of clothes suitable for traveling, including a cloak, boots, and a belt."
+        }
+    },
+    "feats": [],
+    "organizations": [
+        "The Order of the Gauntlet"
+    ],
+    "allies": [
+        {
+            "name": "Torin Ironhammer",
+            "relationship": "Mentor",
+            "race": "Dwarf",
+            "age": 150,
+            "status": "Alive",
+            "location": "Waterdeep",
+            "profession": "Veteran",
+            "personality": "Gruff and wise",
+            "backstory": "Torin is a veteran of many battles, known for his gruff exterior and his wisdom.",
+            "appearance": "Short and stocky, with a thick beard and piercing blue eyes.",
+            "pronouns": "He/him"
+        }
+    ],
+    "enemies": [
+        {
+            "name": "Gort",
+            "relationship": "Rival",
+            "race": "Half-orc",
+            "age": 30,
+            "status": "Alive",
+            "location": "Neverwinter",
+            "profession": "Mercenary",
+            "personality": "Brash and aggressive",
+            "backstory": "Gort is a mercenary who has crossed paths with me many times, and we have developed a fierce rivalry.",
+            "appearance": "Tall and muscular, with a scar across his left eye.",
+            "pronouns": "He/him"
+        },
+        {
+            "name": "Zhentarim",
+            "type": "faction",
+            "leader": "Manshoon",
+            "goals": "Power and wealth",
+            "background": "The Zhentarim is a shadowy organization that seeks to expand its influence and control through any means necessary.",
+            "members": ["Gort"]
+        }
+    ],
+    "mounts": {},
+    "pets:": {},
+    "familiars": {}
+}

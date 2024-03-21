@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "NPC Character Summary",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "relationship": {
+        "type": "string"
+      },
+      "race": {
+        "type": "string",
+        "optional": true
+      },
+      "age": {
+        "type": "integer",
+        "optional": true
+      },
+      "status": {
+        "type": "string",
+        "enum": ["Alive", "Deceased"]
+      },
+      "profession": {
+        "type": "string",
+        "optional": true
+      },
+      "factions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "personality": {
+        "type": "string",
+        "optional": true
+      },
+      "backstory": {
+        "type": "string",
+        "optional": true
+      },
+      "appearance": {
+        "type": "string",
+        "optional": true
+      },
+      "pronouns": {
+        "type": "string"
+      },
+      "location": {
+        "type": "string",
+        "optional": true
+      },
+      "home": {
+        "type": "string",
+        "optional": true
+      },
+      "current_location": {
+        "type": "string",
+        "optional": true
+      }
+    },
+    "required": [
+      "name",
+      "relationship",
+      "status",
+      "factions",
+      "pronouns"
+    ]
+  }
+   

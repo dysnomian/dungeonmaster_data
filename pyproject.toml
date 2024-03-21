@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dungeonmaster-data"
+version = "0.1.0"
+description = ""
+authors = ["Liss McCabe <liss@eristiccode.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.1.1"
+jsonschema = "^4.21.1"
+black = "^24.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

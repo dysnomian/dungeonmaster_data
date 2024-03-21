@@ -1,0 +1,296 @@
+{
+    "name": "Name",
+    "full_name": "Full Name",
+    "pronouns": "He/him",
+    "age": 20,
+    "alignment": "Neutral Good",
+    "race": {
+        "name": "Variant Human",
+        "features": {
+            "languages": [
+                "Common",
+                "Elvish",
+                "Halfling"
+            ]
+        }
+    },
+    "classes": [
+        {
+            "name": "Fighter",
+            "level": 1,
+            "subclass": "Champion",
+            "features": {
+                "fighting_style": "Dueling"
+            }
+        }
+    ],
+    "ability_scores": {
+        "strength": 16,
+        "dexterity": 14,
+        "constitution": 14,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 10
+    },
+    "leveling": {
+        "system": "Experience",
+        "experience_points": 0
+    },
+    "conditions": [],
+    "hit_points": {
+        "current": 73,
+        "maximum": 73,
+        "temporary": 0
+    },
+    "appearance": {
+        "eyes": "Brown",
+        "hair": "Short brown hair",
+        "skin": "Tanned",
+        "height": "180 cm",
+        "build": "Lean and muscular",
+        "weight": "100 kg",
+        "distinguishing_features": "Large",
+        "notes": "Wears a long, brown coat and a wide-brimmed hat"
+    },
+    "proficiencies": {
+        "skills": [
+            {
+                "name": "Athletics",
+                "source": "Fighter",
+                "proficiency": "expert"
+            },
+            {
+                "name": "Intimidation",
+                "source": "Soldier",
+                "proficiency": "full"
+            },
+            {
+                "name": "Perception",
+                "source": "Perception Amulet",
+                "proficiency": "half"
+            },
+            {
+                "name": "Survival",
+                "source": "Soldier"
+            }
+        ],
+        "armor": [
+            {
+                "name": "All armor",
+                "source": "Fighter"
+            }
+        ],
+        "weapons": [
+            {
+                "name": "Simple weapons",
+                "source": "Fighter"
+            }
+        ],
+        "languages": [
+            {
+                "name": "Common",
+                "source": "Default"
+            },
+            {
+                "name": "Elvish",
+                "source": "Variant Human"
+            },
+            {
+                "name": "Giant",
+                "source": "Soldier"
+            },
+            {
+                "name": "Halfling",
+                "source": {
+                    "type": "Item",
+                    "name": "Ring of Language Storing"
+                }
+            },
+            {
+                "name": "All",
+                "source": {
+                    "type": "Spell",
+                    "name": "Comprehend Languages",
+                    "duration": "1 hour",
+                    "limitations": "Can only understand, not speak or write"
+                }
+            }
+        ]
+    },
+    "spells": {
+        "known": [
+            {
+                "name": "Vicious Mockery",
+                "level": "Cantrip",
+                "source": "Fighter"
+            },
+            {
+                "name": "Booming Blade",
+                "level": "Cantrip",
+                "source": "High Half-Elf"
+            },
+            {
+                "name": "Dissonant Whispers",
+                "level": "1",
+                "source": "Bard"
+            },
+            {
+                "name": "Calm Emotions",
+                "level": "2",
+                "source": "Bard"
+            }
+        ],
+        "slots": {
+            "total": {
+                "cantrip": "Unlimited",
+                "level_1": 4,
+                "level_2": 2
+            },
+            "remaining": {
+                "level_1": 4,
+                "level_2": 2
+            }
+        },
+        "racial_or_item_spells": [
+            {
+                "name": "Booming Blade",
+                "level": "Cantrip",
+                "source": "High Half-Elf"
+            }
+        ]
+    },
+    "equipment": [
+        {
+            "name": "Longsword",
+            "description": "A versatile, finely-crafted sword that can be wielded with one or two hands.",
+            "weight": 3,
+            "weapon": {
+                "name": "Longsword",
+                "type": "Longsword",
+                "attackType": ["melee"],
+                "damage": [
+                    {
+                        "dice_string": "1d8",
+                        "damage_type": "Slashing",
+                        "modifier": "Strength"
+                    }
+                ],
+                "properties": [
+                    "Versatile"
+                ],
+                "equipped": true,
+                "slot": "mainhand"
+            }
+        },
+        {
+            "name": "Light Crossbow",
+            "description": "A simple, light crossbow that is easy to handle and use.",
+            "weight": 5,
+            "weapon": {
+                "type": "Crossbow, Light",
+                "attackType": [
+                    "ranged"
+                ],
+                "damage": [
+                    {
+                        "dice_string": "1d8",
+                        "damage_type": "Piercing",
+                        "modifier": "Dexterity"
+                    }
+                ],
+                "properties": [
+                    "Ammunition",
+                    "Loading",
+                    "Two-Handed"
+                ],
+                "equipped": false,
+                "slot": "mainhand",
+                "range": {
+                    "normal": 80,
+                    "maximum": 320
+                },
+                "ammunition": {
+                    "type": "Bolts",
+                    "quantity": 20
+                }
+            }
+        },
+        {
+            "name": "Breastplate",
+            "description": "A sturdy, well-crafted breastplate that provides good protection without hindering movement.",
+            "weight": 20,
+            "wearable": {
+                "wear_slot": [
+                    "body"
+                ],
+                "armor_class": 14,
+                "equipped": true
+            }
+        },
+        {
+            "name": "Crossbow Bolt Case",
+            "description": "A sturdy case designed to hold crossbow bolts securely.",
+            "weight": 1,
+            "container": {
+                "capacity": 20,
+                "contents": [
+                    {
+                        "name": "Crossbow Bolts",
+                        "qty": 10,
+                        "weight": 1.5
+                    }
+                ],
+                "restrictions": [
+                    "Crossbow Bolts only"
+                ]
+            }
+        },
+        {
+            "name": "Backpack",
+            "description": "A sturdy, well-made backpack with multiple compartments for storing various items.",
+            "weight": 5,
+            "container": {
+                "capacity": 30,
+                "contents": [
+                    {
+                        "name": "Rations",
+                        "qty": 10,
+                        "description": "A day's worth of rations for one person.",
+                        "weight": 2
+                    }
+                ]
+            }
+        }
+    ],
+    "personality_traits": [
+        "I always have a plan for what to do when things go wrong."
+    ],
+    "ideals": [
+        "Freedom. Chains are meant to be broken, as are those who would forge them. (Chaotic)"
+    ],
+    "bonds": [
+        "I’m trying to pay off an old debt I owe to a generous benefactor."
+    ],
+    "flaws": [
+        "I have a tell that reveals when I'm lying."
+    ],
+    "allies": [
+        {
+            "name": "Korin",
+            "relationship": "Friend",
+            "race": "Half-Elf",
+            "age": 125,
+            "status": "Alive",
+            "profession": "Soldier",
+            "factions": [
+                "The Iron Legion"
+            ],
+            "personality": "A gruff, no-nonsense soldier",
+            "backstory": "Soldier in the Iron Legion",
+            "appearance": "Tall, muscular half-elf",
+            "pronouns": "He/him"
+        }
+    ],
+    "backstory": "I was a soldier in the Iron Legion",
+    "notes": "Has a dog named Rufus who is always by his side."
+}

@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+
+import argparse
+import json
+import requests
+
+CHARACTER_SCHEMA = {
+    # Define your character sheet schema here
+}
+
+CAMPAIGN_SCHEMA = {
+    # Define your campaign schema here
+}
+
+def download_json(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        raise Exception(f"Failed to download JSON from {url}")
+
+def validate_json(data, schema):
+    # Implement your JSON validation logic here
+    pass
+
+def save_json(data, filename):
+    # Implement your logic to save the JSON data to the correct place
+    pass
+
+def fetch_character_sheet(url, validate_only):
+    try:
+        character_data = download_json(url)
+        if validate_only:
+            validation_errors = validate_json(character_data, CHARACTER_SCHEMA)
+            if validation_errors:
+                print("Validation errors:")
+                for error in validation_errors:
+                    print(error)
+            else:
+                print("Validation successful")
+        else:
+            validation_errors = validate_json(character_data, CHARACTER_SCHEMA)
+            if validation_errors:
+                print("Validation errors:")
+                for error in validation_errors:
+                    print(error)
+            else:
+                save_json(character_data, "character_sheet.json")
+                print("Character sheet downloaded and saved successfully")
+    except Exception as e:
+        print(f"Error: {str(e)}")
+
+def fetch_campaign(url):
+    try:
+        campaign_data = download_json(url)
+        validation_errors = validate_json(campaign_data, CAMPAIGN_SCHEMA)
+        if validation_errors:
+            print("Validation errors:")
+            for error in validation_errors:
+                print(error)
+        else:
+            save_json(campaign_data, "campaign.json")
+            print("Campaign JSON downloaded and saved successfully")
+    except Exception as e:
+        print(f"Error: {str(e)}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Fetch and validate JSON data")
+    parser.add_argument("--character", metavar="URL", help="URL for character sheet JSON")
+    parser.add_argument("--campaign", metavar="URL", help="URL for campaign JSON")
+    parser.add_argument("--validate-only", action="store_true", help="Validate JSON without downloading")
+    args = parser.parse_args()
+
+    if args.character:
+        fetch_character_sheet(args.character, args.validate_only)
+    elif args.campaign:
+        fetch_campaign(args.campaign)
+    else:
+        print("Please provide either --character or --campaign option")
